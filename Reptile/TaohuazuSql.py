@@ -1,6 +1,7 @@
 import requests
 from lxml import etree
 import json
+import pymysql
 from multiprocessing import Pool #进程池提供指定数量的进程供用户调用
 class Taohuazu:
     def __init__(self):
@@ -18,7 +19,7 @@ class Taohuazu:
                         }
 
 
-    # 函数get_url_list：根据网页内容提取URL地址，构造url list,返回一组地址 需要调试，
+    # 函数get_url_list：根据网页内容提取URL地址，构造url list,返回一组地址
     def get_url_list(self):
         htm=self.parse_url(self.url_temp)
         html = etree.HTML(htm)
