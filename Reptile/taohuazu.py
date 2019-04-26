@@ -21,7 +21,7 @@ class Taohuazu:
     # 函数get_url_list：根据网页内容提取URL地址，构造url list,返回一组地址 需要调试，
     def get_url_list(self):
         htm=self.parse_url(self.url_temp)
-        html = etree.HTML(htm)
+        html = etree.HTML(htm) #etree.HTML():构造了一个XPath解析对象并对HTML文本进行自动修正
         tbody_list = html.xpath(".//table[@summary='forum_181']/tbody/tr/td/a/@href") #获取地址列表
         print("tbodyli是",tbody_list)
         # for url in tbody_list:
