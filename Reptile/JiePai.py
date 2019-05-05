@@ -28,40 +28,15 @@ def get_page_index():
         ':method': 'GET',
         ':path': '/ search /?keyword = % E8 % A1 % 97 % E6 % 8B % 8D',
         ': scheme': 'https',
-        'accept': '''text / html, application / xhtml + xml, application / xml;
-        q = 0.9, image / webp, image / apng, * / *;q = 0.8, application / signed - exchange;
-        v = b3''',
+        'accept': 'text / html, application / xhtml + xml, application / xml;q = 0.9, image / webp, image / apng, * / *;q = 0.8, application / signed - exchange;v = b3',
         'accept - encoding': 'gzip, deflate, br',
-        'accept - language': '''zh - CN, zh;
-        q = 0.9, zh - TW;
-        q = 0.8, en;
-        q = 0.7''',
+        'accept - language': 'zh - CN, zh;q = 0.9, zh - TW;q = 0.8, en;q = 0.7',
         'cache - control': 'max - age = 0',
-        'cookie': '''tt_webid = 6644299735950509575;
-        UM_distinctid = 168302
-        f23c3b3 - 01e620701
-        a3efa - b781e3e - 100200 - 168302
-        f23c41cf;
-        csrftoken = 5087
-        b3c4f8ddd945ec6b93afc3b23487;
-        tt_webid = 6644299735950509575;
-        WEATHER_CITY = % E5 % 8
-        C % 97 % E4 % BA % AC;
-        __tasessionId = xnswfanz21557041514753;
-        CNZZDATA1259612802 = 725458634 - 1546995716 - % 7
-        C1557041329;
-        s_v_web_id = 9e1
-        d0e8ff03fb73b889844e244788603''',
+        'cookie': 'tt_webid = 6644299735950509575;UM_distinctid = 168302f23c3b3 - 01e620701a3efa - b781e3e - 100200 - 168302f23c41cf;csrftoken = 5087b3c4f8ddd945ec6b93afc3b23487;tt_webid = 6644299735950509575;WEATHER_CITY = % E5 % 8C % 97 % E4 % BA % AC;__tasessionId = xnswfanz21557041514753;CNZZDATA1259612802 = 725458634 - 1546995716 - % 7C1557041329;s_v_web_id = 9e1d0e8ff03fb73b889844e244788603',
         'dnt': '1',
         'referer': 'https: // landing.toutiao.com /',
         'upgrade - insecure - requests': '1',
-        'user - agent': '''Mozilla / 5.0(WindowsNT10.0;Win64;
-        x64) AppleWebKit / 537.36(KHTML, like
-        Gecko) Chrome / 74.0
-        .3724
-        .8
-        Safari / 537.36''',
-
+        'user - agent': 'Mozilla / 5.0(WindowsNT10.0;Win64;x64) AppleWebKit / 537.36(KHTML, likeGecko) Chrome / 74.0.3724.8Safari / 537.36',
     }
 
     url='https://www.toutiao.com/api/search/content/?'+urlencode(data)
